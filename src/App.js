@@ -28,8 +28,9 @@ const App = () => {
     const [url, setURL] = useState(undefined);
     const [progress, setProgress] = useState('getUpload');
     const [errorMessage, setErrorMessage] = useState('');
-
+  
     const onFileChange = async (failedImages, successImages) => {
+
         if (!url) {
             console.log('missing url');
             setErrorMessage('missing URL to upload to');
